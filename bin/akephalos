@@ -69,7 +69,8 @@ else
     java_args = [
       "-Xmx128M",
       "-cp", [JRubyJars.core_jar_path, JRubyJars.stdlib_jar_path].join(":"),
-      "org.jruby.Main"
+      "org.jruby.Main",
+      "-runStyle HtmlUnit:IE7"
     ]
     ruby_args = [ 
       "-Ku",
