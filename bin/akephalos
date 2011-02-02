@@ -67,10 +67,10 @@ else
     jruby_stdlib = JRubyJars.stdlib_jar_path
 
     java_args = [
-      "-Xmx128M",
+      "-Xmx128M",   
+      "-Dgwt.args='-runStyle HtmlUnit:IE7'",
       "-cp", [JRubyJars.core_jar_path, JRubyJars.stdlib_jar_path].join(":"),
-      "org.jruby.Main",
-      "-runStyle HtmlUnit:IE7"
+      "org.jruby.Main"
     ]
     ruby_args = [ 
       "-Ku",
